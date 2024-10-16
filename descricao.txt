@@ -1,0 +1,17 @@
+coisas para fazer:
+
+    sistema de cadastro{
+            lógica
+            página
+        }
+    sistema de login{
+            lógica
+            página
+        }
+    otimização{
+            salvar os vídeos em json no LocalStorage
+            playlists{
+                    lógica
+                    modal
+                }
+        }

@@ -103,14 +103,14 @@ nav{
     border: none;
 }
 
-.videosmini {
+#videosmini {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 60%;
 }
 
-.videosmini button {
+#videosmini button {
     width: 100%;
     padding: 1;
     margin-bottom: 10px;
@@ -121,11 +121,11 @@ nav{
     margin: 1;
 }
 
-.videosmini button:hover {
+#videosmini button:hover {
     transform: scale(1.05);
 }
 
-.videosmini img {
+#videosmini img {
     width: 100%;
     height: auto;
     display: block;
@@ -142,3 +142,47 @@ footer{
     font-style: italic;
     font-size: 1.5em;
 }
+
+.perfil {
+    border-radius: 100%;
+    border-width: 1px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    border: solid;
+    background-image: url('/assets/perfil.svg');
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 80px 50px 10vh 0;
+    width: 200px;
+    z-index: 1000;
+    color: black;
+  }
+
+  .dropdown a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .dropdown a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown p {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }

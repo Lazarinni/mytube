@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/app.js" defer></script>
+    <title>MyTube</title>
+</head>
+<body onload="carregarVideos()">
+    <header class="topo">
+        <span>
+            <img src="youtube.png" alt="">
+            <h1>Mytube</h1>
+        </span>
+        <input type="text" placeholder="Pesquise por um vídeo">
+        <button class="perfil"onclick="toggleDropdown()" ></button>
+        <!--
+          <div class="dropdown" id="dropdownMenu">
+            <p>Olá, John Doe!</p>
+            <p>blablabla@gmail.com</p>
+            <p>pedrindoidão</p>
+            <a href="#"><p>Perfil</p></a>
+            <a href="#"><p>Logout</p></a>
+          </div>
+          -->
+          <div class="dropdown" id="dropdownMenu">
+            <a href="../views/login.html">Faça login</a>
+            <a href="../views/cadastro.html">Cadastre-se</a>
+          </div>
+    </header>
+    
+    <div class="container">
+
+        <main class="videofoco">
+            <iframe id="videoPrincipal" width="560" height="315" src="https://www.youtube.com/embed/NKHzcXwTdB4?si=ohiOtho6exwmL-IM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="descricao">
+                <h2>Descrição do trabalho:</h2>
+                <p>Para esse trabalho, eu utilizei os vídeos do canal "Fireship" para demonstrar o uso de iframes. Para isso tivemos que fazer com que o site tivesse aparência semelhante ao youtube e que os iframes estivessem funcionando devidamente.</p>
+                <h2>Membros da dupla:</h2>
+                <ul>
+                <li>
+                    <p>
+                        João Victor Lazarini da Fonseca
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Luiz Guilherme Barcelos dos Santos
+                    </p>
+                </li>
+                </ul>
+            </div>
+        </main>
+    
+        <nav id="videosmini">
+                
+        </nav>
+
+    </div>
+
+    <footer>
+        © 2024 MyTube
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+          const dropdown = document.getElementById('dropdownMenu');
+          if (dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+          } else {
+            dropdown.style.display = 'block';
+          }
+        }
+    
+        window.onclick = function(event) {
+          const dropdown = document.getElementById('dropdownMenu');
+          if (!event.target.matches('.perfil')) {
+            if (dropdown.style.display === 'block') {
+              dropdown.style.display = 'none';
+            }
+          }
+        }
+      </script>
+
+</body>
+</html>
