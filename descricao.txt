@@ -15,3 +15,9 @@ coisas para fazer:
                     modal
                 }
         }
+Ok, eu quero adicionar o usuário à sessão quando ele logar
+
+Também quero que existam mais coisas pra confirmar as informações do usuário
+Tenho que criar um usuário em específico no localstorage que vai ser o admin
+o admin vai poder ver todos os usuário e banir alguns, ou seja, se o usuário for banido, ele vai ter mais um atributo chamado 'banido' e ele pode ser deletado depois de banido e aí vapo
+A pessoa logada pode adicionar vídeos no mytube e pode criar uma playlist só dela (dependendo a gente melhora ainda as funcionalidades pra partede vídeos pra ficar tudo joia (tipo, ele focar no vídeo que você apertar e tocar somente o que estiver em foco

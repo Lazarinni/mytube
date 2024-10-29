@@ -255,3 +255,5 @@ function fazerCadastro() {
 if(localStorage.getItem("users") ==  null){
     inicializarLocalStorage();
 }
+
+//Aoba galerinha do mallll
