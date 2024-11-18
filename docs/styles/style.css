@@ -152,7 +152,7 @@ footer{
     height: 50px;
     width: 50px;
     border: solid;
-    background-image: url('/assets/perfil.svg');
+    background-image: url('../assets/perfil.svg');
     cursor: pointer;
 }
 

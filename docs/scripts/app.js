@@ -1,11 +1,3 @@
-// estudar sessão para javascript
-
-// fazer um esquema de sessão de usuário 
-
-// criar de algum jeito uma playlist associada a cada usuario
-
-// fazer melhor palhaçada de autenticação de usuário
-
 const usuarios = [
     {
         id: 1,
@@ -49,7 +41,7 @@ const videos = [
 
         url: 'vFW_TxKLyrE?si=tj7ovzZc_xH7iRfB'
     },
-    /*{
+    {
         id: 2,
 
         url: 'rIfdg_Ot-LI?si=h7f6sLTfQXfoTZJV'
@@ -123,7 +115,7 @@ const videos = [
         id: 16,
 
         url: 'Tn6-PIqc4UM?si=Hx3bFEFzuahD2uS7'
-    },*/
+    },
     {
         id: 17,
 
@@ -192,6 +184,7 @@ function validarLogin(){
             if(user.senha == password.value){
                 alert("Você logou!");
                 valido = 1;
+                window.location.href='../index.html';
             } else{
                 alert("Senha incorreta.");
                 valido = 1;
@@ -217,9 +210,8 @@ function fazerCadastro() {
 
     
     if (inputSenha.value !== inputConfirmSenha.value) {
-        alert("As senhas não batem, amigo");
-    } else {
-        alert('senhas inguais')
+        alert("As senhas não estão iguais!");
+        return;
     }
 
     let user = {
@@ -250,10 +242,9 @@ function fazerCadastro() {
 
 
     alert('Cadastro feito com sucesso');
+    window.location.href='../index.html';
 }
 
 if(localStorage.getItem("users") ==  null){
     inicializarLocalStorage();
 }
-
-//Aoba galerinha do mallll
